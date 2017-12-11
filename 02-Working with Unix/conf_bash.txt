@@ -2,7 +2,7 @@
 nano ~/.bash_profile
 # enter usually 1 command per line
 alias docs='cd ~/Documents'
-
+alias ghuw='cd ~/GitHub/Unix-Workbench'
 
 # then run
 source ~/.bash_profile
