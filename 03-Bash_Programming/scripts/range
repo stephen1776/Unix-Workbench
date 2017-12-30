@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Write a program called range that takes one number as an argument and prints all of the numbers
+# between that number and 0.
+
+END=$@
+for ((i=1;i<=END;i++)); do
+    echo -n "$i " # print one line with a space between num's
+done

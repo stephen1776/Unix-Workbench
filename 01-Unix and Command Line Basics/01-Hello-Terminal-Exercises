@@ -1,5 +1,0 @@
-#!/bin/bash
-# 1. Print your name to the terminal.
-echo 'Stephen'
-# 2. Clear your terminal after completing #1.
-clear
