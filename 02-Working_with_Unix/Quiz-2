@@ -1,0 +1,146 @@
+# Quiz 2
+
+1. Let's say you run the following command in your working directory and you get the following result:
+ls
+
+2017-log-tmp-44.txt
+2017-log-tmp-45.txt
+2017-log-tmp-46.txt
+2017-log-3312.txt
+2017-log-3313.txt
+2017-log-3314.txt
+
+Which of the following series of commands would you use to move all files that have tmp in their name into a directory called tmpfiles.
+
+mkdir tmpfiles
+mv *-tmp-* tmpfiles
+
+2. This question asks about a file called states.txt which you can find here.
+
+Which of the following commands would print all of the states with names that start with a vowel?
+
+egrep "^[AEIOU]" states.txt
+
+3. This question asks about a file called states.txt which you can find here.
+
+Which of the following is printed as the result of the command below?
+egrep "^M.*a$" states.txt
+
+Minnesota
+Montana
+
+4. What action is taken by the following command?
+cat message1.txt message2.txt > email.txt
+
+The text files message1.txt and message2.txt are combined in a new file called email.txt.
+
+5. Which of the following commands is capable of printing the following line to the console, assuming the following line is in a file called iago.txt?
+
+		So will I turn her virtue into pitch, And out of her own goodness make the net That shall enmesh them all.
+
+egrep "\W\sA" iago.txt
+
+6. What's the difference between the ~/.bash_history file and history command?
+
+		The history command shows the commands that you've used in your current shell session, while ~/.bash_history collects commands that you've used in past shell sessions.  c
+
+		The history command prints the history of specific command line utilities to the console by taking that name of the command as an argument, while ~/.bash_history shows the commands that you've used in your current shell session.
+
+		Configuration settings like your aliases are specified in ~/.bash_history, while the history command shows the commands that you've used in your current shell session.
+
+		The history command collects commands that you've used in past shell sessions, while ~/.bash_history shows the commands that you've used in your current shell session.
+
+
+7. What's the purpose of the alias command?
+
+		It allows you to create shortcuts for commands which are usual set in ~/.bash_profile.
+
+		It allows you to change the name of your machine and it's usually set in ~/.bash_history.
+
+		It allows you to change the name of your machine and it's usually set in ~/.bash_profile.
+
+		It allows you to create shortcuts for commands which are usual set in ~/.bash_history.
+
+
+8. This question asks about a file called states.txt which you can find here.
+
+Imagine you create a file called states2.txt with the following command:
+
+cat states.txt states.txt > states2.txt
+
+Which of the following is the md5 hash of states2.txt?
+
+		8d7dd71ff51614e69339b03bd1cb86ac 
+
+		f9030deb7670294c44cfd46557ee819d
+
+		77f7ca8608f7c204143a0238bbbfb759 c
+
+		34a49d8cf25f28afca798561eaa8a623
+
+
+9. Consider a situation where the following makefile is in an otherwise empty directory:
+
+	all: file1.txt file2.txt
+
+	file1.txt:
+		echo 'This is file1' > file1.txt
+
+	file2.txt:
+		echo 'This is file2' > file2.txt
+
+	clean:
+		rm file1.txt file2.txt
+
+What is the sequence of events that occurs if you run the following commands in the shell?
+
+	make file1.txt
+	make
+	make clean
+
+-
+
+	file1.txt is created.
+	file2.txt is created.
+	Both file1.txt and file2.txt are destroyed.
+
+	file1.txt and file2.txt are created.
+	Nothing happens since file2.txt already exists.
+	Both file1.txt and file2.txt are destroyed.
+
+	file1.txt is created.
+	file1.txt is created.
+	Nothing happens since file1.txt and file2.txt already exist.
+
+	Nothing is done since the directory is empty and make depends on file1.txt and file2.txt.
+
+10. Take a look at the man page for echo. The echo command only has one flag. What is the flag and what is the purpose of the flag?
+
+	The flag is -n and prevents a newline character from being printed after the printed text. c
+
+	The flag is -n and forces a newline character to be printed after the printed text.
+
+	The flag is -s and substitutes all spaces in the string with newline characters.
+
+	The flag is -s and removes all newline characters from the string argument.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
